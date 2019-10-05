@@ -37,7 +37,7 @@ body {
     background-repeat: no-repeat;
     background-size: 40%; }
     .clientData .clientPhoto img {
-      width: 100%;
+      width: 215px;
       height: 204px; }
   .clientData .clientDataLanguages {
     -webkit-box-align: baseline;
