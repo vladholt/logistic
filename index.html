@@ -23,18 +23,18 @@
 	<div class="row">
 		<div class="col-5 offset-1">
 			<div class="row no-gatters">
-				<div class="col-4 clientPhoto">
+				<div class="col-6 clientPhoto">
 					<img src=" " alt=" ">
 				</div>
-				<div class="col-8 clientDataFitures">
-					<div class="row align-items-end">
-				 		<span class="card_lable col-3 clientDataLabel ">Имя</span> <span class="card_inscription col-8"> Катерина</span>
+				<div class="col-6 pl-2 pr-1 clientDataFitures">
+					<div class="row align-items-center">
+				 		<span class="card_lable col-4 pr-0 clientDataLabel ">Имя</span> <span class="card_inscription col-8"> Катерина</span>
 					</div>
-					<div class="row align-items-end">
-					 	<span class="card_lable col-3 clientDataLabel">Псевдоним</span> <span class="card_inscription col-8">Daniil-Devil</span> 
+					<div class="row align-items-center">
+					 	<span class="card_lable col-4 pr-0 clientDataLabel">Псевдоним</span> <span class="card_inscription col-8">Daniil-Devil</span> 
 					</div>
-					<div class="row align-items-end">
-					 	<span class="card_lable col-3 clientDataLabel">На сайте с </span> <data class="col-8"> 01.05.12</data> 
+					<div class="row align-items-center">
+					 	<span class="card_lable col-4 pr-0 clientDataLabel">На сайте с </span> <data class="col-8"> 01.05.12</data> 
 					</div>
 					<p class="card-text">  <div>рейтинг</div> </p>
 					<div class="row ">
@@ -46,8 +46,8 @@
 				</div>
 			</div>
 			<div class="row clientDataLanguages">
-					<span class="clientDataLabel col-3 ml-4 pr-0">Владение языками:</span> 
-					<ul class="col-8 ">
+					<span class="clientDataLabel col-4 ml-4 pr-0">Владение языками:</span> 
+					<ul class="col-7 ">
 						<li>EN</li>
 						<li>ES</li>
 						<li>ZH</li>
@@ -57,12 +57,12 @@
 
 			<div class="row clientDataReview">
 				<span class="col-3 ml-4 clientDataLabel">О себе:</span>
-				<span class="col-1 offset-2 p-0 clientDataLabel">Отзывы</span>
-				<span class="col-1 p-0"> <span>+</span>14</span>
-				<span class="col-1 "> <span>-</span>2</span>
+				<span class="col-2 offset-2 p-0 clientDataLabel">Отзывы</span>
+				<span class="col-1 p-0"> <span class="positivReview">+</span>14</span>
+				<span class="col-1 offset-1"> <span class="negativeReview" >-</span>2</span>
 			</div>
 			<div class="row clientDataAboutClient">
-				<div class="col-8 offset-1 pl-2" >
+				<div class="col-10 offset-1 pl-4 " >
 					<p>Предпрениматель с небольшим оборотом денежных средств нуждаюсь в постоянных грузоперевозках по городу Киев</p>
 				</div>
 			</div>
@@ -94,7 +94,7 @@
 		</div>
 		<div class="col-5">  
 			<div class="row clientDataGraphic">
-				<canvas class="col-12" id="schedule" height="180"></canvas>
+				<canvas class="col-8 offset-2" id="schedule" height="180"></canvas>
 				<script>
 				var ctx = document.getElementById('schedule').getContext('2d');
 				var schedule = new Chart(ctx, {
@@ -188,7 +188,7 @@
 	<div class="col-10 offset-1 clientsRequests">
 		<div class="row  clientsRequestsOpen">
 			<h3 class="col-10 offset-1">Открытые заявки</h3>
-			<div class=" m-auto">
+			<div class=" mx-4">
 				<div class="col-3 pt-3 root">
 					<div class="col-11 offset-1">
 						<div class="row mb-1 d-flex ">
@@ -226,19 +226,19 @@
 						<p>Овощи и фрукты</p>
 					</div>
 				</div>
-				<div class=" d-flex flex-column  col-3 pt-3 px-5 comments">
+				<div class=" d-flex flex-column  col-3 pt-3 px-4 comments">
 					<div class="mb-2">	
 						<span></span> 
 						<span class=" clientsRequestsOpenLabel">Комментарий</span>	
 					</div>
-					<p class="mb-0">Равным образом внедрение современных методик создает</p>
+					<p class="mb-0 pr-3">Равным образом внедрение современных методик создает</p>
 					<a class=" mt-n2 align-self-end" href="#">читать</a>
 				</div>
 				<div class="col-2 pt-3 rate">
 					<div class=" clientsRequestsOpenLabel mb-2">Лучшая ставка</div>	
 					<div class="clientsRequestsOpenRate"> 2100</div>
 					<div class="row">
-						<span class="iconHammer col-1 offset-2"></span>
+						<span class="iconHammer col-1 offset-1"></span>
 						<span class="rateQuentity col-3 pl-2">3</span>
 						<span class="iconEye col-2"></span>
 						<span class="rateViewes col-3 pl-2">23</span>
@@ -252,7 +252,7 @@
 		</div>
 
 
-		<div class="row applications">
+		<div class="row px-4 applications">
 			<h3 class="col-12">Завершенные заявки</h3>
 
 			<table class="">

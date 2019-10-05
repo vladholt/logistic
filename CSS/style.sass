@@ -7,11 +7,13 @@
       
 body
 	background-color: #303030
+h3
+	font-size: 100%
 
 .clientData
 	color: #fefefe
 	.clientDataOnlineStatus
-		margin: 0 0 1.56em 0
+		margin: 0 0 1em 0
 		span:nth-child(1)
 			@include background ('../img/icons/green-dot.svg', center, 50%)
 			width: 1em
@@ -26,7 +28,7 @@ body
 	.clientDataFitures
 		padding-left: 0
 		div
-			margin-bottom: 0.6em
+			margin-bottom: 0.4em
 
 		.clientPhoneVisibility 
 			@include background ('../img/icons/hide.svg', center, 40%)
@@ -55,8 +57,13 @@ body
 	.clientDataReview
 		align-items: baseline
 		margin-top: 0.75em
+		.positivReview
+			color: #41f0ad
+		.negativeReview
+			color: #f8705a
 	.clientDataAboutClient
 		margin-top: 0.75em
+		font-size: 0.8em
 	.clientDataIcons
 		height: 3em
 		& div:nth-child(1)
@@ -78,7 +85,7 @@ body
 	.clientDataStatistic
 		margin-top: 1.25em
 		h3
-			text-size: 1.5em
+			text-size: 1em
 			line-height: 2em
 			text-transform: uppercase
 			text-align: center
@@ -102,7 +109,6 @@ body
 			margin-bottom: 1em
 			padding: 0 
 		>div
-			height: 8.75em
 			display: flex
 			flex-direction: row
 			align-items: stratch
@@ -118,6 +124,7 @@ body
 					font-size: 0.65em
 				.clientsRequestsOpenFituresTowns
 					color:#222222
+					font-size: 0.75em
 					display: inline-block
 					width: 37%
 					& span
@@ -127,6 +134,7 @@ body
 					width: 22%
 					display: inline-block
 		.cargoType
+			font-size: 0.75em
 			border-right: 1px solid #c9c9c9
 			& >span:first-child
 				width: 1.25em
@@ -144,20 +152,22 @@ body
 			
 			.clientsRequestsOpenСargoTypeName
 				color:#222222
+				font-size: 0.75em
 
 
 		.comments
 			border-right: 1px solid #c9c9c9
 			color:#222222
-			p
-				font-size: 0.9em
+			p,
+			a
+				font-size: 0.75em
 			div
 				>span:first-child
 					width: 1.25em
 					height: 1.25em
 					display: inline-block
 					@include background ('../img/icons/comments.svg', center, 70%)
-
+			
 		.rate
 			border-right: 1px solid #c9c9c9
 			color:#222222
@@ -172,13 +182,14 @@ body
 				height: 1.25em
 				display: inline-block
 				@include background ('../img/icons/hammer.svg', center, 80%)
-
-
 			.iconEye
 				width: 1.25em
 				height: 1.25em
 				display: inline-block
 				@include background ('../img/icons/eye.svg', center, 80%)
+			.rateQuentity,
+			.rateViewes
+				font-size: 0.8em
 
 		.buyRate
 			color:#222222
@@ -191,11 +202,12 @@ body
 				padding: 0 1em 0 1em
 				background-color: #5494d4
 				line-height: 2.5em
-				text-size: 1em
+				font-size: 0.8em
 				color: #fff
 				align-self: center
 		.clientsRequestsOpenLabel
-			color: #c0c0c0
+			color: #c9c9c9
+			font-size: 0.75em
 	.applications
 		h3
 			font-size: 1em
