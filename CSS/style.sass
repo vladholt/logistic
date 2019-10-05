@@ -1,0 +1,284 @@
+ 
+@mixin background ($imgpath, $position: center, $size: 30%, $repeat: no-repeat )
+	  background-image: url($imgpath) 
+	  background-position: $position
+	  background-repeat: $repeat
+	  background-size: $size
+      
+body
+	background-color: #303030
+
+.clientData
+	color: #fefefe
+	.clientDataOnlineStatus
+		margin: 0 0 1.56em 0
+		span:nth-child(1)
+			@include background ('../img/icons/green-dot.svg', center, 50%)
+			width: 1em
+			height: 0.7em
+			display: inline-block
+			
+	.clientDataLabel
+		color: #767676
+		font-size: 0.8em
+
+
+	.clientDataFitures
+		padding-left: 0
+		div
+			margin-bottom: 0.6em
+
+		.clientPhoneVisibility 
+			@include background ('../img/icons/hide.svg', center, 40%)
+			
+		.clientEmail 
+		  	@include background ('../img/icons/contact.svg', center, 40%)
+	.clientPhoto 
+		img
+	  		width: 100%
+	  		height: 204px
+		@include background ('../img/icons/photo-camera.svg', center, 40%)
+	.clientDataLanguages
+		align-items: baseline
+		margin-top: 0.75em
+		.clientDataLabel
+		ul	
+			margin: 0
+			padding: 0
+			li
+				margin-right: 0.25em
+				display: inline-block
+				&:not(:first-child)
+					&::before
+						content: '\B7'
+						margin-right: 0.25em
+	.clientDataReview
+		align-items: baseline
+		margin-top: 0.75em
+	.clientDataAboutClient
+		margin-top: 0.75em
+	.clientDataIcons
+		height: 3em
+		& div:nth-child(1)
+			@include background ('../img/icons/skype.svg', center, 50%)				
+		& div:nth-child(2)
+			@include background ('../img/icons/whatsapp.svg', center, 50%)		
+		& div:nth-child(3)
+			@include background ('../img/icons/facebook.svg', center, 50%)	
+		& div:nth-child(4)
+			@include background ('../img/icons/instagram.svg', center, 50%)		
+		& div:nth-child(5)
+			@include background ('../img/icons/viber.svg', center, 50%)		
+	
+	.clientDataGraphic
+		margin-bottom: 2em
+
+
+
+	.clientDataStatistic
+		margin-top: 1.25em
+		h3
+			text-size: 1.5em
+			line-height: 2em
+			text-transform: uppercase
+			text-align: center
+		.clientDataStatisticOpen
+			color: blue
+		.clientDataStatisticOpen, 
+		.clientDataStatisticCloses
+			font-size: 5em
+		div:nth-child(3)
+			font-sise: 1em
+			color: #767676
+
+
+.clientsRequests
+	background-color: #fefefe
+	margin-top: 7.2em
+	.clientsRequestsOpen
+		h3	
+			font-size: 1em
+			margin-top: 2em 
+			margin-bottom: 1em
+			padding: 0 
+		>div
+			height: 8.75em
+			display: flex
+			flex-direction: row
+			align-items: stratch
+			border: 1px solid #ccc
+			padding: 0
+		.root
+			border-right: 1px solid #c9c9c9
+			.clientsRequestsOpenIcon
+				@include background ('../img/icons/target.svg', right, 45%)
+			.clientsRequestsOpenFitures	
+				.clientsRequestsOpenFituresLabel
+					color: #c9c9c9
+					font-size: 0.65em
+				.clientsRequestsOpenFituresTowns
+					color:#222222
+					display: inline-block
+					width: 37%
+					& span
+						display: block
+				.clientsRequestsOpenFituresDate
+					color:#222222
+					width: 22%
+					display: inline-block
+		.cargoType
+			border-right: 1px solid #c9c9c9
+			& >span:first-child
+				width: 1.25em
+				height: 1.25em
+				display: inline-block
+				@include background ('../img/icons/lorry.svg', center, 100%)	
+
+			.clientsRequestsOpenСargoType
+				color:#222222
+				& >span:first-child
+					width: 1.25em
+					height: 1.25em
+					display: inline-block
+					@include background ('../img/icons/yellow_dot.svg', center, 70%)	
+			
+			.clientsRequestsOpenСargoTypeName
+				color:#222222
+
+
+		.comments
+			border-right: 1px solid #c9c9c9
+			color:#222222
+			p
+				font-size: 0.9em
+			div
+				>span:first-child
+					width: 1.25em
+					height: 1.25em
+					display: inline-block
+					@include background ('../img/icons/comments.svg', center, 70%)
+
+		.rate
+			border-right: 1px solid #c9c9c9
+			color:#222222
+			.clientsRequestsOpenLabel
+				text-align: center
+
+			.clientsRequestsOpenRate
+				font-size: 1.65em
+				text-align: center
+			.iconHammer
+				width: 1.25em
+				height: 1.25em
+				display: inline-block
+				@include background ('../img/icons/hammer.svg', center, 80%)
+
+
+			.iconEye
+				width: 1.25em
+				height: 1.25em
+				display: inline-block
+				@include background ('../img/icons/eye.svg', center, 80%)
+
+		.buyRate
+			color:#222222
+			display: flex
+			flex-direction: row
+			justify-content: center
+			button
+				border: 0px solid
+				border-radius: 16px
+				padding: 0 1em 0 1em
+				background-color: #5494d4
+				line-height: 2.5em
+				text-size: 1em
+				color: #fff
+				align-self: center
+		.clientsRequestsOpenLabel
+			color: #c0c0c0
+	.applications
+		h3
+			font-size: 1em
+			padding: 0 
+			margin: 3.75em 0 2.2em 4.5em
+
+		table
+			color: #bababa
+			tr
+				td
+					border-bottom: 1px solid #e3e3e3
+					padding: 1em
+					text-align: center
+					vertical-align: top
+				td:nth-child(1)
+					width: 24%
+					border-right: 1px solid #e3e3e3
+				td:nth-child(2)
+					width: 13%
+					border-right: 1px solid #e3e3e3
+				td:nth-child(3)
+					width: 17%
+					border-right: 1px solid #e3e3e3
+				td:nth-child(4)
+					width: 33%
+					border-right: 1px solid #e3e3e3
+					span
+						color: #5595d3
+						text-transform: lowercase
+				td:nth-child(5)
+					width: 13%
+					span
+						display: block
+	nav
+		margin: 2.8em 0 6em
+		ul
+			justify-content: center
+			.back
+				width: 1.25em
+				height: 1.25em
+				display: inline-block
+				@include background ('../img/icons/back.svg', center, 80%)
+			.next
+				width: 1.25em
+				height: 1.25em
+				display: inline-block
+				@include background ('../img/icons/next.svg', center, 80%)
+		.page-link
+			border: 0px
+			&:hover
+				border-bottom: 2px solid #5494d4
+				border-radius: 0
+	.clientsRequestsReviews
+		padding-left: 6.56em
+		list-style: none			
+		li
+			margin-right: 0.15em
+			display: inline-block
+			&:not(:first-child)
+				&::before
+					content: '\B7'
+					margin-right: 0.15em
+		.clientsRequestsReviewsAll
+			font-size: 1em
+		.clientsRequestsReviewsPositive
+			font-size: 0.75em
+			span:nth-child(1)
+				color: #02dc30
+			span:nth-child(2)
+				color: #c0c0c0
+		.clientsRequestsReviewsNegative
+			font-size: 0.75em
+			span:nth-child(1)
+				color: #f88777
+			span:nth-child(2)
+				color: #c0c0c0
+	.clientsRequestsStory
+		text-align: justify
+		padding: 2em 6.56em
+	.clientsRequestsSlogan,
+	.clientsRequestsLocation
+		text-align: center
+	
+
+
+
