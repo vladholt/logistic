@@ -22,14 +22,16 @@ h3
 			
 	.clientDataLabel
 		color: #767676
-		font-size: 0.8em
+		font-size: 0.7em
+		word-spacing: normal
 
 
 	.clientDataFitures
 		padding-left: 0
 		div
 			margin-bottom: 0.4em
-
+		.card_inscription
+			font-size: 0.85em
 		.clientPhoneVisibility 
 			@include background ('../img/icons/hide.svg', center, 40%)
 			
@@ -37,9 +39,11 @@ h3
 		  	@include background ('../img/icons/contact.svg', center, 40%)
 	.clientPhoto 
 		img
-	  		width: 215px
-	  		height: 204px
-		@include background ('../img/icons/photo-camera.svg', center, 40%)
+	  		max-width: 215px
+	  		max-height: 204px
+	  		width: 100%
+	  		height: auto
+		@include background ('../img/icons/photo-camera.svg', center, 6em)
 	.clientDataLanguages
 		align-items: baseline
 		margin-top: 0.75em
@@ -117,7 +121,7 @@ h3
 		.root
 			border-right: 1px solid #c9c9c9
 			.clientsRequestsOpenIcon
-				@include background ('../img/icons/target.svg', right, 45%)
+				@include background ('../img/icons/target.svg', 85%, 1.5em)
 			.clientsRequestsOpenFitures	
 				.clientsRequestsOpenFituresLabel
 					color: #c9c9c9
@@ -181,12 +185,12 @@ h3
 				width: 1.25em
 				height: 1.25em
 				display: inline-block
-				@include background ('../img/icons/hammer.svg', center, 80%)
+				@include background ('../img/icons/hammer.svg', center, 70%)
 			.iconEye
 				width: 1.25em
 				height: 1.25em
 				display: inline-block
-				@include background ('../img/icons/eye.svg', center, 80%)
+				@include background ('../img/icons/eye.svg', center, 70%)
 			.rateQuentity,
 			.rateViewes
 				font-size: 0.8em
@@ -202,7 +206,7 @@ h3
 				padding: 0 1em 0 1em
 				background-color: #5494d4
 				line-height: 2.5em
-				font-size: 0.8em
+				font-size: 0.68em
 				color: #fff
 				align-self: center
 		.clientsRequestsOpenLabel
@@ -291,6 +295,42 @@ h3
 	.clientsRequestsLocation
 		text-align: center
 	
+@media (min-width: 1200px)
+
+	body
+		font-size: 1.2em
 
 
+@media (max-width: 991.5px)
 
+	body
+		font-size: 1.2em
+		
+		.clientsRequests
+
+			.clientsRequestsOpen
+				font-size: 1.1em
+				.root,
+				.cargoType,
+				.comments,
+				.rate,
+				.buyRate
+					border: 1px solid #c9c9c9
+				.root	
+					.clientsRequestsOpenIcon
+						background-position: 85%
+					.clientsRequestsOpenFitures	
+						.clientsRequestsOpenFituresLabel
+							
+						.clientsRequestsOpenFituresTowns
+							
+						.clientsRequestsOpenFituresDate
+							
+				.cargoType
+					text-align: center
+					.clientsRequestsOpenСargoTypeName
+						color:#222222
+						font-size: 1em
+
+
+		

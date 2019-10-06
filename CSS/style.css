@@ -19,11 +19,14 @@ h3 {
       display: inline-block; }
   .clientData .clientDataLabel {
     color: #767676;
-    font-size: 0.8em; }
+    font-size: 0.7em;
+    word-spacing: normal; }
   .clientData .clientDataFitures {
     padding-left: 0; }
     .clientData .clientDataFitures div {
       margin-bottom: 0.4em; }
+    .clientData .clientDataFitures .card_inscription {
+      font-size: 0.85em; }
     .clientData .clientDataFitures .clientPhoneVisibility {
       background-image: url("../img/icons/hide.svg");
       background-position: center;
@@ -38,10 +41,12 @@ h3 {
     background-image: url("../img/icons/photo-camera.svg");
     background-position: center;
     background-repeat: no-repeat;
-    background-size: 40%; }
+    background-size: 6em; }
     .clientData .clientPhoto img {
-      width: 215px;
-      height: 204px; }
+      max-width: 215px;
+      max-height: 204px;
+      width: 100%;
+      height: auto; }
   .clientData .clientDataLanguages {
     -webkit-box-align: baseline;
     -ms-flex-align: baseline;
@@ -138,9 +143,9 @@ h3 {
     border-right: 1px solid #c9c9c9; }
     .clientsRequests .clientsRequestsOpen .root .clientsRequestsOpenIcon {
       background-image: url("../img/icons/target.svg");
-      background-position: right;
+      background-position: 85%;
       background-repeat: no-repeat;
-      background-size: 45%; }
+      background-size: 1.5em; }
     .clientsRequests .clientsRequestsOpen .root .clientsRequestsOpenFitures .clientsRequestsOpenFituresLabel {
       color: #c9c9c9;
       font-size: 0.65em; }
@@ -208,7 +213,7 @@ h3 {
       background-image: url("../img/icons/hammer.svg");
       background-position: center;
       background-repeat: no-repeat;
-      background-size: 80%; }
+      background-size: 70%; }
     .clientsRequests .clientsRequestsOpen .rate .iconEye {
       width: 1.25em;
       height: 1.25em;
@@ -216,7 +221,7 @@ h3 {
       background-image: url("../img/icons/eye.svg");
       background-position: center;
       background-repeat: no-repeat;
-      background-size: 80%; }
+      background-size: 70%; }
     .clientsRequests .clientsRequestsOpen .rate .rateQuentity,
     .clientsRequests .clientsRequestsOpen .rate .rateViewes {
       font-size: 0.8em; }
@@ -238,7 +243,7 @@ h3 {
       padding: 0 1em 0 1em;
       background-color: #5494d4;
       line-height: 2.5em;
-      font-size: 0.8em;
+      font-size: 0.68em;
       color: #fff;
       -ms-flex-item-align: center;
       -ms-grid-row-align: center;
@@ -332,3 +337,26 @@ h3 {
   .clientsRequests .clientsRequestsSlogan,
   .clientsRequests .clientsRequestsLocation {
     text-align: center; }
+
+@media (min-width: 1200px) {
+  body {
+    font-size: 1.2em; } }
+
+@media (max-width: 991.5px) {
+  body {
+    font-size: 1.2em; }
+    body .clientsRequests .clientsRequestsOpen {
+      font-size: 1.1em; }
+      body .clientsRequests .clientsRequestsOpen .root,
+      body .clientsRequests .clientsRequestsOpen .cargoType,
+      body .clientsRequests .clientsRequestsOpen .comments,
+      body .clientsRequests .clientsRequestsOpen .rate,
+      body .clientsRequests .clientsRequestsOpen .buyRate {
+        border: 1px solid #c9c9c9; }
+      body .clientsRequests .clientsRequestsOpen .root .clientsRequestsOpenIcon {
+        background-position: 85%; }
+      body .clientsRequests .clientsRequestsOpen .cargoType {
+        text-align: center; }
+        body .clientsRequests .clientsRequestsOpen .cargoType .clientsRequestsOpenСargoTypeName {
+          color: #222222;
+          font-size: 1em; } }
