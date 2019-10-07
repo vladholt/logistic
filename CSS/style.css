@@ -149,9 +149,9 @@ h3 {
     background-position: right center; }
     .clientsRequests .clientsRequestsOpen .root .clientsRequestsOpenIcon {
       background-image: url("../img/icons/target.svg");
-      background-position: 85%;
+      background-position: right;
       background-repeat: no-repeat;
-      background-size: 1.5em; }
+      background-size: 1.3em; }
     .clientsRequests .clientsRequestsOpen .root .clientsRequestsOpenFitures .clientsRequestsOpenFituresLabel {
       color: #c9c9c9;
       font-size: 0.65em; }
@@ -177,9 +177,12 @@ h3 {
         text-align: center; }
     .clientsRequests .clientsRequestsOpen .root .rootMap .rootMapLocationPoint {
       background-image: url("../img/icons/location_point.svg");
-      background-position: 85%;
+      background-position: right;
       background-repeat: no-repeat;
-      background-size: 1em; }
+      background-size: 0.9em; }
+    .clientsRequests .clientsRequestsOpen .root .rootMap div:nth-child(2) {
+      font-size: 0.6em;
+      letter-spacing: 0px; }
   .clientsRequests .clientsRequestsOpen .cargoType {
     font-size: 0.75em;
     background: -webkit-gradient(linear, left top, left bottom, from(#c9c9c9), to(#c9c9c9));
