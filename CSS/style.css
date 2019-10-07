@@ -140,7 +140,13 @@ h3 {
     border: 1px solid #ccc;
     padding: 0; }
   .clientsRequests .clientsRequestsOpen .root {
-    border-right: 1px solid #c9c9c9; }
+    background: -webkit-gradient(linear, left top, left bottom, from(#c9c9c9), to(#c9c9c9));
+    background: -webkit-linear-gradient(#c9c9c9, #c9c9c9);
+    background: -o-linear-gradient(#c9c9c9, #c9c9c9);
+    background: linear-gradient(#c9c9c9, #c9c9c9);
+    background-size: 1px 70%;
+    background-repeat: no-repeat;
+    background-position: right center; }
     .clientsRequests .clientsRequestsOpen .root .clientsRequestsOpenIcon {
       background-image: url("../img/icons/target.svg");
       background-position: 85%;
@@ -156,13 +162,33 @@ h3 {
       width: 37%; }
       .clientsRequests .clientsRequestsOpen .root .clientsRequestsOpenFitures .clientsRequestsOpenFituresTowns span {
         display: block; }
-    .clientsRequests .clientsRequestsOpen .root .clientsRequestsOpenFitures .clientsRequestsOpenFituresDate {
-      color: #222222;
-      width: 22%;
-      display: inline-block; }
+    .clientsRequests .clientsRequestsOpen .root .clientsRequestsOpenFitures .clientsRequestsOpenFituresDate > div {
+      width: 2.5em;
+      height: 2.5em;
+      background-color: #f2f2f2;
+      border: 1px solid #e3e3e3;
+      border-radius: 2px; }
+      .clientsRequests .clientsRequestsOpen .root .clientsRequestsOpenFitures .clientsRequestsOpenFituresDate > div .clientsRequestsOpenFituresDateNumber {
+        font-size: 0.8em;
+        text-align: center; }
+      .clientsRequests .clientsRequestsOpen .root .clientsRequestsOpenFitures .clientsRequestsOpenFituresDate > div .clientsRequestsOpenFituresDateDay {
+        font-size: 0.5em;
+        text-transform: lowercase;
+        text-align: center; }
+    .clientsRequests .clientsRequestsOpen .root .rootMap .rootMapLocationPoint {
+      background-image: url("../img/icons/location_point.svg");
+      background-position: 85%;
+      background-repeat: no-repeat;
+      background-size: 1em; }
   .clientsRequests .clientsRequestsOpen .cargoType {
     font-size: 0.75em;
-    border-right: 1px solid #c9c9c9; }
+    background: -webkit-gradient(linear, left top, left bottom, from(#c9c9c9), to(#c9c9c9));
+    background: -webkit-linear-gradient(#c9c9c9, #c9c9c9);
+    background: -o-linear-gradient(#c9c9c9, #c9c9c9);
+    background: linear-gradient(#c9c9c9, #c9c9c9);
+    background-size: 1px 70%;
+    background-repeat: no-repeat;
+    background-position: right center; }
     .clientsRequests .clientsRequestsOpen .cargoType > span:first-child {
       width: 1.25em;
       height: 1.25em;
@@ -185,7 +211,13 @@ h3 {
       color: #222222;
       font-size: 0.75em; }
   .clientsRequests .clientsRequestsOpen .comments {
-    border-right: 1px solid #c9c9c9;
+    background: -webkit-gradient(linear, left top, left bottom, from(#c9c9c9), to(#c9c9c9));
+    background: -webkit-linear-gradient(#c9c9c9, #c9c9c9);
+    background: -o-linear-gradient(#c9c9c9, #c9c9c9);
+    background: linear-gradient(#c9c9c9, #c9c9c9);
+    background-size: 1px 70%;
+    background-repeat: no-repeat;
+    background-position: right center;
     color: #222222; }
     .clientsRequests .clientsRequestsOpen .comments p,
     .clientsRequests .clientsRequestsOpen .comments a {
@@ -199,7 +231,13 @@ h3 {
       background-repeat: no-repeat;
       background-size: 70%; }
   .clientsRequests .clientsRequestsOpen .rate {
-    border-right: 1px solid #c9c9c9;
+    background: -webkit-gradient(linear, left top, left bottom, from(#c9c9c9), to(#c9c9c9));
+    background: -webkit-linear-gradient(#c9c9c9, #c9c9c9);
+    background: -o-linear-gradient(#c9c9c9, #c9c9c9);
+    background: linear-gradient(#c9c9c9, #c9c9c9);
+    background-size: 1px 70%;
+    background-repeat: no-repeat;
+    background-position: right center;
     color: #222222; }
     .clientsRequests .clientsRequestsOpen .rate .clientsRequestsOpenLabel {
       text-align: center; }
@@ -242,7 +280,7 @@ h3 {
       border-radius: 16px;
       padding: 0 1em 0 1em;
       background-color: #5494d4;
-      line-height: 2.5em;
+      line-height: 2.8em;
       font-size: 0.68em;
       color: #fff;
       -ms-flex-item-align: center;
