@@ -40,11 +40,14 @@ h3
 		.clientEmail 
 		  	@include background ('../img/icons/contact.svg', center, 40%)
 	.clientPhoto 
+		max-height: 200px
+		max-width: 200px
+		min-width: 200px
 		img
-	  		max-width: 215px
-	  		max-height: 204px
-	  		width: 100%
-	  		height: auto
+			height: 100%
+			width: 100%
+	  		
+			
 		@include background ('../img/icons/photo-camera.svg', center, 6em)
 	.clientDataLanguages
 		align-items: baseline
@@ -326,11 +329,16 @@ h3
 	.clientsRequestsLocation
 		text-align: center
 	
+
 @media (min-width: 1200px)
 
 	body
-		font-size: 1.2em
+		font-size: 1.1em
 
+@media (min-width: 1300px)
+
+	body
+		font-size: 1.2em
 
 @media (max-width: 991.5px)
 

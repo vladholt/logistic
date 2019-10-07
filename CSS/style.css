@@ -38,15 +38,16 @@ h3 {
       background-repeat: no-repeat;
       background-size: 40%; }
   .clientData .clientPhoto {
+    max-height: 200px;
+    max-width: 200px;
+    min-width: 200px;
     background-image: url("../img/icons/photo-camera.svg");
     background-position: center;
     background-repeat: no-repeat;
     background-size: 6em; }
     .clientData .clientPhoto img {
-      max-width: 215px;
-      max-height: 204px;
-      width: 100%;
-      height: auto; }
+      height: 100%;
+      width: 100%; }
   .clientData .clientDataLanguages {
     -webkit-box-align: baseline;
     -ms-flex-align: baseline;
@@ -380,6 +381,10 @@ h3 {
     text-align: center; }
 
 @media (min-width: 1200px) {
+  body {
+    font-size: 1.1em; } }
+
+@media (min-width: 1300px) {
   body {
     font-size: 1.2em; } }
 
