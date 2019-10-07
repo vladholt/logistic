@@ -140,59 +140,44 @@ h3 {
     align-items: stratch;
     border: 1px solid #ccc;
     padding: 0; }
-  .clientsRequests .clientsRequestsOpen .root {
-    background: -webkit-gradient(linear, left top, left bottom, from(#c9c9c9), to(#c9c9c9));
-    background: -webkit-linear-gradient(#c9c9c9, #c9c9c9);
-    background: -o-linear-gradient(#c9c9c9, #c9c9c9);
-    background: linear-gradient(#c9c9c9, #c9c9c9);
-    background-size: 1px 70%;
+  .clientsRequests .clientsRequestsOpen .root .clientsRequestsOpenIcon {
+    background-image: url("../img/icons/target.svg");
+    background-position: right;
     background-repeat: no-repeat;
-    background-position: right center; }
-    .clientsRequests .clientsRequestsOpen .root .clientsRequestsOpenIcon {
-      background-image: url("../img/icons/target.svg");
-      background-position: right;
-      background-repeat: no-repeat;
-      background-size: 1.3em; }
-    .clientsRequests .clientsRequestsOpen .root .clientsRequestsOpenFitures .clientsRequestsOpenFituresLabel {
-      color: #c9c9c9;
-      font-size: 0.65em; }
-    .clientsRequests .clientsRequestsOpen .root .clientsRequestsOpenFitures .clientsRequestsOpenFituresTowns {
-      color: #222222;
-      font-size: 0.75em;
-      display: inline-block;
-      width: 37%; }
-      .clientsRequests .clientsRequestsOpen .root .clientsRequestsOpenFitures .clientsRequestsOpenFituresTowns span {
-        display: block; }
-    .clientsRequests .clientsRequestsOpen .root .clientsRequestsOpenFitures .clientsRequestsOpenFituresDate > div {
-      width: 2.5em;
-      height: 2.5em;
-      background-color: #f2f2f2;
-      border: 1px solid #e3e3e3;
-      border-radius: 2px; }
-      .clientsRequests .clientsRequestsOpen .root .clientsRequestsOpenFitures .clientsRequestsOpenFituresDate > div .clientsRequestsOpenFituresDateNumber {
-        font-size: 0.8em;
-        text-align: center; }
-      .clientsRequests .clientsRequestsOpen .root .clientsRequestsOpenFitures .clientsRequestsOpenFituresDate > div .clientsRequestsOpenFituresDateDay {
-        font-size: 0.5em;
-        text-transform: lowercase;
-        text-align: center; }
-    .clientsRequests .clientsRequestsOpen .root .rootMap .rootMapLocationPoint {
-      background-image: url("../img/icons/location_point.svg");
-      background-position: right;
-      background-repeat: no-repeat;
-      background-size: 0.9em; }
-    .clientsRequests .clientsRequestsOpen .root .rootMap div:nth-child(2) {
-      font-size: 0.6em;
-      letter-spacing: 0px; }
-  .clientsRequests .clientsRequestsOpen .cargoType {
+    background-size: 1.3em; }
+  .clientsRequests .clientsRequestsOpen .root .clientsRequestsOpenFitures .clientsRequestsOpenFituresLabel {
+    color: #c9c9c9;
+    font-size: 0.65em; }
+  .clientsRequests .clientsRequestsOpen .root .clientsRequestsOpenFitures .clientsRequestsOpenFituresTowns {
+    color: #222222;
     font-size: 0.75em;
-    background: -webkit-gradient(linear, left top, left bottom, from(#c9c9c9), to(#c9c9c9));
-    background: -webkit-linear-gradient(#c9c9c9, #c9c9c9);
-    background: -o-linear-gradient(#c9c9c9, #c9c9c9);
-    background: linear-gradient(#c9c9c9, #c9c9c9);
-    background-size: 1px 70%;
+    display: inline-block;
+    width: 37%; }
+    .clientsRequests .clientsRequestsOpen .root .clientsRequestsOpenFitures .clientsRequestsOpenFituresTowns span {
+      display: block; }
+  .clientsRequests .clientsRequestsOpen .root .clientsRequestsOpenFitures .clientsRequestsOpenFituresDate > div {
+    width: 2.5em;
+    height: 2.5em;
+    background-color: #f2f2f2;
+    border: 1px solid #e3e3e3;
+    border-radius: 2px; }
+    .clientsRequests .clientsRequestsOpen .root .clientsRequestsOpenFitures .clientsRequestsOpenFituresDate > div .clientsRequestsOpenFituresDateNumber {
+      font-size: 0.8em;
+      text-align: center; }
+    .clientsRequests .clientsRequestsOpen .root .clientsRequestsOpenFitures .clientsRequestsOpenFituresDate > div .clientsRequestsOpenFituresDateDay {
+      font-size: 0.5em;
+      text-transform: lowercase;
+      text-align: center; }
+  .clientsRequests .clientsRequestsOpen .root .rootMap .rootMapLocationPoint {
+    background-image: url("../img/icons/location_point.svg");
+    background-position: right;
     background-repeat: no-repeat;
-    background-position: right center; }
+    background-size: 0.9em; }
+  .clientsRequests .clientsRequestsOpen .root .rootMap div:nth-child(2) {
+    font-size: 0.6em;
+    letter-spacing: 0px; }
+  .clientsRequests .clientsRequestsOpen .cargoType {
+    font-size: 0.75em; }
     .clientsRequests .clientsRequestsOpen .cargoType > span:first-child {
       width: 1.25em;
       height: 1.25em;
@@ -215,13 +200,6 @@ h3 {
       color: #222222;
       font-size: 0.75em; }
   .clientsRequests .clientsRequestsOpen .comments {
-    background: -webkit-gradient(linear, left top, left bottom, from(#c9c9c9), to(#c9c9c9));
-    background: -webkit-linear-gradient(#c9c9c9, #c9c9c9);
-    background: -o-linear-gradient(#c9c9c9, #c9c9c9);
-    background: linear-gradient(#c9c9c9, #c9c9c9);
-    background-size: 1px 70%;
-    background-repeat: no-repeat;
-    background-position: right center;
     color: #222222; }
     .clientsRequests .clientsRequestsOpen .comments p,
     .clientsRequests .clientsRequestsOpen .comments a {
@@ -235,13 +213,6 @@ h3 {
       background-repeat: no-repeat;
       background-size: 70%; }
   .clientsRequests .clientsRequestsOpen .rate {
-    background: -webkit-gradient(linear, left top, left bottom, from(#c9c9c9), to(#c9c9c9));
-    background: -webkit-linear-gradient(#c9c9c9, #c9c9c9);
-    background: -o-linear-gradient(#c9c9c9, #c9c9c9);
-    background: linear-gradient(#c9c9c9, #c9c9c9);
-    background-size: 1px 70%;
-    background-repeat: no-repeat;
-    background-position: right center;
     color: #222222; }
     .clientsRequests .clientsRequestsOpen .rate .clientsRequestsOpenLabel {
       text-align: center; }
@@ -387,6 +358,20 @@ h3 {
 @media (min-width: 1300px) {
   body {
     font-size: 1.2em; } }
+
+@media (min-width: 991.6px) {
+  .root,
+  .cargoType,
+  .comments,
+  .rate,
+  .buyRate {
+    background: -webkit-gradient(linear, left top, left bottom, from(#c9c9c9), to(#c9c9c9));
+    background: -webkit-linear-gradient(#c9c9c9, #c9c9c9);
+    background: -o-linear-gradient(#c9c9c9, #c9c9c9);
+    background: linear-gradient(#c9c9c9, #c9c9c9);
+    background-size: 1px 70%;
+    background-repeat: no-repeat;
+    background-position: right center; } }
 
 @media (max-width: 991.5px) {
   body {
