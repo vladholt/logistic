@@ -5,6 +5,30 @@ body {
 h3 {
   font-size: 100%; }
 
+.link {
+  text-size: 0.7em;
+  color: #5495d5; }
+
+.iconHammer {
+  width: 1.25em;
+  height: 1.25em;
+  display: inline;
+  background-image: url("../img/icons/hammer.svg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 70%;
+  display: inline-block; }
+
+.iconEye {
+  width: 1.25em;
+  height: 1.25em;
+  display: inline;
+  background-image: url("../img/icons/eye.svg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 70%;
+  display: inline-block; }
+
 .clientData {
   color: #fefefe; }
   .clientData .clientDataOnlineStatus {
@@ -200,11 +224,11 @@ h3 {
       color: #222222;
       font-size: 0.75em; }
   .clientsRequests .clientsRequestsOpen .comments {
+    position: relative;
     color: #222222; }
-    .clientsRequests .clientsRequestsOpen .comments p,
-    .clientsRequests .clientsRequestsOpen .comments a {
+    .clientsRequests .clientsRequestsOpen .comments p {
       font-size: 0.75em; }
-    .clientsRequests .clientsRequestsOpen .comments div > span:first-child {
+    .clientsRequests .clientsRequestsOpen .comments + div > span:first-child {
       width: 1.25em;
       height: 1.25em;
       display: inline-block;
@@ -212,6 +236,21 @@ h3 {
       background-position: center;
       background-repeat: no-repeat;
       background-size: 70%; }
+    .clientsRequests .clientsRequestsOpen .comments .foolComents {
+      width: 80%;
+      -webkit-box-sizing: border-box;
+      box-sizing: border-box;
+      padding: 1em;
+      position: absolute;
+      top: 20%;
+      left: 10%;
+      -webkit-box-shadow: 0 10px 10px rgba(0, 0, 0, 0.25);
+      box-shadow: 0 10px 10px rgba(0, 0, 0, 0.25);
+      background-color: #fff;
+      z-index: 10;
+      display: block; }
+      .clientsRequests .clientsRequestsOpen .comments .foolComents .link {
+        text-align: right; }
   .clientsRequests .clientsRequestsOpen .rate {
     color: #222222; }
     .clientsRequests .clientsRequestsOpen .rate .clientsRequestsOpenLabel {
@@ -219,22 +258,6 @@ h3 {
     .clientsRequests .clientsRequestsOpen .rate .clientsRequestsOpenRate {
       font-size: 1.65em;
       text-align: center; }
-    .clientsRequests .clientsRequestsOpen .rate .iconHammer {
-      width: 1.25em;
-      height: 1.25em;
-      display: inline-block;
-      background-image: url("../img/icons/hammer.svg");
-      background-position: center;
-      background-repeat: no-repeat;
-      background-size: 70%; }
-    .clientsRequests .clientsRequestsOpen .rate .iconEye {
-      width: 1.25em;
-      height: 1.25em;
-      display: inline-block;
-      background-image: url("../img/icons/eye.svg");
-      background-position: center;
-      background-repeat: no-repeat;
-      background-size: 70%; }
     .clientsRequests .clientsRequestsOpen .rate .rateQuentity,
     .clientsRequests .clientsRequestsOpen .rate .rateViewes {
       font-size: 0.8em; }
@@ -292,7 +315,8 @@ h3 {
         text-transform: lowercase; }
     .clientsRequests .applications table tr td:nth-child(5) {
       width: 13%; }
-      .clientsRequests .applications table tr td:nth-child(5) span {
+      .clientsRequests .applications table tr td:nth-child(5) .applicationPrise,
+      .clientsRequests .applications table tr td:nth-child(5) .currencyType {
         display: block; }
   .clientsRequests nav {
     margin: 2.8em 0 6em; }
@@ -363,8 +387,7 @@ h3 {
   .root,
   .cargoType,
   .comments,
-  .rate,
-  .buyRate {
+  .rate {
     background: -webkit-gradient(linear, left top, left bottom, from(#c9c9c9), to(#c9c9c9));
     background: -webkit-linear-gradient(#c9c9c9, #c9c9c9);
     background: -o-linear-gradient(#c9c9c9, #c9c9c9);

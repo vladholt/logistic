@@ -100,9 +100,9 @@
 				var schedule = new Chart(ctx, {
 				    type: 'line',
 				    data: {
-				        labels: ['Янв', 'Фев', 'Мар', 'Апр', 'Май', 'Июн'],
+				        labels: [' ','Янв', 'Фев', 'Мар', 'Апр', 'Май', 'Июн',' '],
 				        datasets: [{
-				            data: [12, 19, 3, 5, 2, 3],
+				            data: [10, 12, 19, 3, 5, 2, 5, 9],
 				            backgroundColor: [
 				                'rgba(0, 0, 0, 0)'
 				            ],
@@ -124,7 +124,17 @@
 				        			position: 'top',
 				        			gridLines:{
 					        			lineWidth: 1,
-					        			color: '#c0c0c0',
+					        			color: [
+					        					'rgba(48, 48, 48, 1.0)',
+								                'rgba(91, 91, 91, 1.0)',
+								                'rgba(91, 91, 91, 1.0)',
+								                'rgba(91, 91, 91, 1.0)',
+								                'rgba(91, 91, 91, 1.0)',
+								                'rgba(91, 91, 91, 1.0)',
+								                'rgba(91, 91, 91, 1.0)',
+								                'rgba(48, 48, 48, 1.0)'
+								            ],
+					        			//color: ['#303030', '#c0c0c0', '#c0c0c0', '#c0c0c0', '#c0c0c0', '#c0c0c0', '#c0c0c0', '#303030'];
 					        			tickMarkLength: 0,
 					        			drawBorder: false
 					        		},
@@ -236,7 +246,11 @@
 						<span class=" clientsRequestsOpenLabel">Комментарий</span>	
 					</div>
 					<p class="mb-0 pr-3">Равным образом внедрение современных методик создает</p>
-					<a class=" mt-n2 mb-2 align-self-end" href="#">читать</a>
+					<div class=" mt-n2 mb-2 align-self-end link">читать</div>
+					<div class="foolComents">
+						<p> Равным образом внедрение современных методик создает необходимость включения в производственный план целого ряда внеочередных мероприятий с учетомкомплекса поэтапного и последовательного развития общества.</p>
+						<div class=" mt-n2 mb-1 align-self-end link">скрыть</div>
+					</div>
 				</div>
 				<div class="col-6 col-lg-2 py-3 rate">
 					<div class=" clientsRequestsOpenLabel mb-2">Лучшая ставка</div>	
@@ -261,13 +275,41 @@
 
 			<table class="">
 				<tr>
-					<td>Киев-Одесса</td>
-					<td>22 декабря</td>
-					<td>овощи и фрукты</td>
-					<td>Рано утром нужно перевести небольшие коробки, так же хотелось ... <span>раскрыть</span> </td>
+					<td class="">Киев-Одесса 
+						<div class=" deliverName deliverFitures">
+								<span> перевозчик </span>
+								<span> "Киев-транс" </span>
+						</div>
+					</td>
+					<td>22 декабря
+						<div class="deliverRainting deliverFitures">
+								<span> ***** </span>
+								
+						</div>
+					</td>
+					<td>овощи и фрукты
+						<div class="cargoInfo deliverFitures">
+								<span> Medium </span>
+						</div>
+					</td>
+					<td><div>
+							<p>Рано утром нужно перевести небольшие коробки, так же хотелось ...</p> 
+						</div> 
+						<div>
+							<p>Рано утром нужно перевести небольшие коробки, так же хотелось бы нанять ваших грузовиков.. Коробки имеют размер 320х400х80мм в количестве 320шт</p> 
+						</div> 
+						<span>раскрыть</span>
+						<span>скрыть</span>
+					</td>
 					<td>
-						<span>1000</span>
-						<span>грн</span>
+						<span class="applicationPrise">1000</span>
+						<span "currencyType" >грн</span>
+						<div>
+							<span class="iconHammer"> </span>
+							<span class="rateQuentity"> 3 </span>
+							<span class="iconEye"> </span>
+							<span class="rateViewes"> 23 </span>
+						</div>
 					</td>
 				</tr>
 				<tr>
