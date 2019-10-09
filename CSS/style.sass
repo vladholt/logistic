@@ -16,6 +16,7 @@ h3
 .link
 	text-size: 0.7em
 	color: $links_color
+	text-transform: lowercase
 
 .iconHammer
 	width: 1.25em
@@ -218,7 +219,7 @@ h3
 				box-shadow: 0 10px 10px rgba(0,0,0,0.25);
 				background-color: #fff
 				z-index: 10
-				display: block
+				display: none
 				.link
 					text-align: right
 
@@ -257,32 +258,27 @@ h3
 			font-size: 1em
 			padding: 0 
 			margin: 3.75em 0 2.2em 4.5em
-
-		table
+		.deliverFitures
+			display: none
+		.applicationsTable
 			color: #bababa
-			tr
-				td
+			
+			.applicationsTableRow
+				.applicationsTableCol
 					border-bottom: 1px solid #e3e3e3
 					padding: 1em
 					text-align: center
 					vertical-align: top
-				td:nth-child(1)
-					width: 24%
+				.applicationsTableCol:nth-child(1)
 					border-right: 1px solid #e3e3e3
-				td:nth-child(2)
-					width: 13%
+				.applicationsTableCol:nth-child(2)
 					border-right: 1px solid #e3e3e3
-				td:nth-child(3)
-					width: 17%
+				.applicationsTableCol:nth-child(3)
 					border-right: 1px solid #e3e3e3
-				td:nth-child(4)
-					width: 33%
+				.applicationsTableCol:nth-child(4)
 					border-right: 1px solid #e3e3e3
-					span
-						color: #5595d3
-						text-transform: lowercase
-				td:nth-child(5)
-					width: 13%
+					text-align: left
+				.applicationsTableCol:nth-child(5)
 					.applicationPrise,
 					.currencyType
 						display: block

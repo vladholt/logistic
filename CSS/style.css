@@ -7,7 +7,8 @@ h3 {
 
 .link {
   text-size: 0.7em;
-  color: #5495d5; }
+  color: #5495d5;
+  text-transform: lowercase; }
 
 .iconHammer {
   width: 1.25em;
@@ -248,7 +249,7 @@ h3 {
       box-shadow: 0 10px 10px rgba(0, 0, 0, 0.25);
       background-color: #fff;
       z-index: 10;
-      display: block; }
+      display: none; }
       .clientsRequests .clientsRequestsOpen .comments .foolComents .link {
         text-align: right; }
   .clientsRequests .clientsRequestsOpen .rate {
@@ -291,33 +292,27 @@ h3 {
     font-size: 1em;
     padding: 0;
     margin: 3.75em 0 2.2em 4.5em; }
-  .clientsRequests .applications table {
+  .clientsRequests .applications .deliverFitures {
+    display: none; }
+  .clientsRequests .applications .applicationsTable {
     color: #bababa; }
-    .clientsRequests .applications table tr td {
+    .clientsRequests .applications .applicationsTable .applicationsTableRow .applicationsTableCol {
       border-bottom: 1px solid #e3e3e3;
       padding: 1em;
       text-align: center;
       vertical-align: top; }
-    .clientsRequests .applications table tr td:nth-child(1) {
-      width: 24%;
+    .clientsRequests .applications .applicationsTable .applicationsTableRow .applicationsTableCol:nth-child(1) {
       border-right: 1px solid #e3e3e3; }
-    .clientsRequests .applications table tr td:nth-child(2) {
-      width: 13%;
+    .clientsRequests .applications .applicationsTable .applicationsTableRow .applicationsTableCol:nth-child(2) {
       border-right: 1px solid #e3e3e3; }
-    .clientsRequests .applications table tr td:nth-child(3) {
-      width: 17%;
+    .clientsRequests .applications .applicationsTable .applicationsTableRow .applicationsTableCol:nth-child(3) {
       border-right: 1px solid #e3e3e3; }
-    .clientsRequests .applications table tr td:nth-child(4) {
-      width: 33%;
-      border-right: 1px solid #e3e3e3; }
-      .clientsRequests .applications table tr td:nth-child(4) span {
-        color: #5595d3;
-        text-transform: lowercase; }
-    .clientsRequests .applications table tr td:nth-child(5) {
-      width: 13%; }
-      .clientsRequests .applications table tr td:nth-child(5) .applicationPrise,
-      .clientsRequests .applications table tr td:nth-child(5) .currencyType {
-        display: block; }
+    .clientsRequests .applications .applicationsTable .applicationsTableRow .applicationsTableCol:nth-child(4) {
+      border-right: 1px solid #e3e3e3;
+      text-align: left; }
+    .clientsRequests .applications .applicationsTable .applicationsTableRow .applicationsTableCol:nth-child(5) .applicationPrise,
+    .clientsRequests .applications .applicationsTable .applicationsTableRow .applicationsTableCol:nth-child(5) .currencyType {
+      display: block; }
   .clientsRequests nav {
     margin: 2.8em 0 6em; }
     .clientsRequests nav ul {
